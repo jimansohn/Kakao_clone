@@ -9,46 +9,103 @@
       src="https://kit.fontawesome.com/3a52c9b328.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar_column">
-        <span class="status-bar_clock">13:54</span>
+  <body class="chats-body">
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar_column">
+          <span class="status-bar_clock">13:54</span>
+        </div>
+        <div class="status-bar_column">
+          <i class="far fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar_battery-level">75%</span>
+          <i class="fas fa-battery-three-quarters"></i>
+        </div>
       </div>
-      <div class="status-bar_column">
-        <i class="far fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar_battery-level">75%</span>
-        <i class="fas fa-battery-three-quarters"></i>
-      </div>
+      <header class="header">
+        <div class="headear__header-column">
+          <a href="index.html" class="header__back-button">
+            <i class="fas fa-arrow-left fa"></i>
+          </a>
+          <h1 class="header__title">Zoro</h1>
+        </div>
+        <div class="headear__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </header>
     </div>
-    <header class="header">
-      <div class="headear__header-column">
-        <a href="index.html" class="header__back-button">
-          <i class="fas fa-arrow-left fa-2x"></i>
-        </a>
-        <h1 class="header__title">Zoro</h1>
-      </div>
-      <div class="headear__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-bars"></i>
-        </span>
-      </div>
-    </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
         <span class="chat__timestamp">Monday, January 20, 2020</span>
         <li class="incoming-message message">
-          <img src="images/2.jpg" class="g-avatar message__avatar" />
+          <img src="images/2.jpg" class="avatar message__avatar" />
           <div class="message__content">
-            <span class="message__author">Zoro</span>
             <div class="message__bubble">
               Who ate all the meats on the boat?!
             </div>
+            <span class="message__author">Zoro</span>
+          </div>
+          <span class="message__timestamp"></span>
+        </li>
+        <li class="outgoing-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <div class="message__bubble">
+              Not me for sure!!!
+            </div>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/2.jpg" class="avatar message__avatar" />
+          <div class="message__content">
+            <div class="message__bubble">
+              Who ate all the meats on the boat?!
+            </div>
+            <span class="message__author">Zoro</span>
+          </div>
+          <span class="message__timestamp"></span>
+        </li>
+        <li class="outgoing-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <div class="message__bubble">
+              Not me for sure!!!
+            </div>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/2.jpg" class="avatar message__avatar" />
+          <div class="message__content">
+            <div class="message__bubble">
+              Who ate all the meats on the boat?!
+            </div>
+            <span class="message__author">Zoro</span>
+          </div>
+          <span class="message__timestamp"></span>
+        </li>
+        <li class="outgoing-message message">
+          <span class="message__timestamp"></span>
+          <div class="message__content">
+            <div class="message__bubble">
+              Not me for sure!!!
+            </div>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/2.jpg" class="avatar message__avatar" />
+          <div class="message__content">
+            <div class="message__bubble">
+              Who ate all the meats on the boat?!
+            </div>
+            <span class="message__author">Zoro</span>
           </div>
           <span class="message__timestamp"></span>
         </li>
@@ -62,12 +119,16 @@
         </li>
       </ul>
     </main>
-    <footer class="chat__write">
+    <footer class="chat__writep">
       <div class="chat__write-column">
-        <i class="far fa-plus-square"></i>
+        <span class="chat__write-icon"><i class="far fa-plus-square"></i></span>
       </div>
       <div class="chat__write-column">
-        <input type="text" palceholder="Send message" class="chat__write-input/>
+        <input
+          type="text"
+          placeholder="Send message"
+          class="chat__write-input"
+        />
       </div>
       <div class="chat__write-column">
         <span class="chat__write-icon"><i class="far fa-smile-wink"></i></span>
